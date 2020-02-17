@@ -43,6 +43,54 @@ namespace euler
 		
            
         }
+        
+
+	public static void Main()
+	{
+		int[] ar = new int[101];
+		for (int i = 0; i <= 100; i++)
+		{
+			ar[i] = i;
+		}
+
+		squareofthesum(ar);
+		sumofthesquares(ar);
+		double d = squareofthesum(ar) - sumofthesquares(ar);
+		Console.WriteLine(squareofthesum(ar));
+		
+		Console.WriteLine(sumofthesquares(ar));
+		
+		Console.WriteLine(d);
+		
+		
+	}
+
+	public static double squareofthesum(int[] n)
+	{
+		int sum = 0;
+		for (int h = 0; h <= 100; h++)
+		{
+			sum = sum + n[h];
+		}
+
+		double sqosums = Math.Pow(sum, 2);
+		return sqosums;
+	}
+
+	public static double sumofthesquares(int[] y)
+	{
+		double sq = 0;
+		for (int p = 0; p <= 100; p++)
+		{
+			sq = sq + Math.Pow(p, 2);
+		
+		}
+		
+        
+		return sq;
+	}
+
+
     }
 }
 
