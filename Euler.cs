@@ -1,14 +1,12 @@
-
 using System;
 
-namespace Euler
+namespace euler
 {
     class Program
     {
-    static void Main(string[] args)
-    {
-        //solution for the Euler problems set no.3
-        const long givenNum = 600851475143;
+        class Sya {
+
+            const long givenNum = 600851475143;
         long largestFactor = 0;
         
         for (long i = 2; i < givenNum; i++) {
@@ -25,16 +23,8 @@ namespace Euler
                 }
             }
         }
-      
-    }
-}
-=======
-﻿using System;
-
-namespace euler
-{
-    class Program
-    {
+        }
+        
        
         static void Main(string[] args)
         {
